@@ -1,0 +1,26 @@
+@import "../../variables";
+
+.error {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  .error-number {
+    color: $c-orange;
+    font-size: 240px;
+    font-weight: $f-w-normal;
+    line-height: 324px;
+  }
+
+  .error-title {
+    font-size: 60px;
+    font-weight: $f-w-normal;
+  }
+
+  .error-description {
+    font-size: 24px;
+    font-weight: $f-w-normal;
+    margin-bottom: 50px;
+  }
+}

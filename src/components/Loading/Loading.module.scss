@@ -1,0 +1,31 @@
+@import "../../variables";
+
+.lds-dual-ring {
+  align-items: center;
+  background-color: $c-bg-main;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+
+  &::after {
+    animation: lds-dual-ring 1.2s linear infinite;
+    border: 6px solid $c-orange;
+    border-color: $c-orange transparent $c-orange transparent;
+    border-radius: 50%;
+    content: " ";
+    height: 164px;
+    margin: 8px;
+    width: 164px;
+  }
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

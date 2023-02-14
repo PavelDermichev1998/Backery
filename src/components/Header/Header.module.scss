@@ -1,0 +1,104 @@
+@import "../../variables";
+
+.header {
+  align-items: center;
+  border: 1px solid $c-grey-border;
+  display: flex;
+  justify-content: center;
+  min-height: 60px;
+  padding: 0 70px;
+  width: 100vw;
+
+  .header-wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+
+    .header-logo-container {
+      align-items: center;
+      display: flex;
+      gap: 100px;
+
+      @media screen and (max-width: 970px) {
+        gap: 10px;
+      }
+
+      .header-logo {
+        height: 50px;
+        width: 50px;
+      }
+
+      .header-text {
+        color: $c-orange-logo;
+        font-size: 20px;
+        font-weight: $f-w-normal;
+      }
+    }
+
+    .header-info-wrapper {
+      align-items: center;
+      display: flex;
+      gap: 10px;
+
+      .header-search-wrapper {
+        align-items: center;
+        display: flex;
+
+        .search-img-wrapper {
+          align-items: center;
+          border: 1px solid $c-white-grey;
+          border-radius: 0 5px 5px 0;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          height: 35px;
+          width: 37px;
+
+          &:hover {
+            background-color: $c-white-grey-hover;
+          }
+        }
+      }
+
+      .header-user-photo-button {
+        align-items: center;
+        background-color: inherit;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        position: relative;
+
+        .header-user-photo {
+          height: 50px;
+          width: 50px;
+        }
+      }
+
+      input {
+        border: 1px solid $c-white-grey;
+        border-right: 0;
+        border-radius: 5px 0 0 5px;
+        height: 35px;
+        outline: none;
+        padding-left: 10px;
+        width: 300px;
+
+        @media screen and (max-width: 440px) {
+          width: 190px;
+        }
+
+        &::placeholder {
+          font-size: 12px;
+          font-weight: $f-w-normal;
+        }
+      }
+    }
+
+    @media screen and (max-width: 970px) {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}

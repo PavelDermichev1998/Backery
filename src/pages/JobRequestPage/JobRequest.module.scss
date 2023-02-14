@@ -1,0 +1,69 @@
+@import "../../variables";
+
+.job-request {
+  background-color: $c-bg-profile;
+  padding: 20px 0 0 30px;
+  width: 100%;
+
+  @media screen and (max-width: 970px) {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0;
+  }
+
+  .search-container {
+    align-items: center;
+    display: flex;
+    margin-bottom: 20px;
+
+    .search-button {
+      align-items: center;
+      border: 1px solid $c-white-grey;
+      border-radius: 0 5px 5px 0;
+      color: $c-search-orange;
+      cursor: pointer;
+      display: flex;
+      font-weight: $f-w-bold;
+      font-size: 14px;
+      justify-content: center;
+      padding: 0 20px;
+      height: 40px;
+
+      &:hover {
+        background-color: $c-search-orange;
+        color: $c-white;
+      }
+    }
+
+    input {
+      border: 1px solid $c-white-grey;
+      border-right: 0;
+      border-radius: 5px 0 0 5px;
+      outline: none;
+      padding-left: 10px;
+      height: 40px;
+      width: 50vw;
+
+      @media screen and (max-width: 440px) {
+        width: 190px;
+      }
+
+      &::placeholder {
+        font-size: 12px;
+        font-weight: $f-w-normal;
+      }
+    }
+  }
+
+  h3 {
+    font-size: 23px;
+    font-weight: $f-w-normal;
+    margin-bottom: 20px;
+  }
+}
+
+.pagination-container {
+  margin-right: 70px;
+}

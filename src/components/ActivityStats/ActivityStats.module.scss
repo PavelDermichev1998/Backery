@@ -1,0 +1,23 @@
+@import "../../variables";
+
+.activity-module {
+  align-items: center;
+  display: flex;
+}
+
+.activity-indicator {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  .activity-indicator-line {
+    height: 30px;
+  }
+}
+
+.activity-text {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 20px;
+}

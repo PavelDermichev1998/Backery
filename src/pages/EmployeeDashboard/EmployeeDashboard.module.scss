@@ -1,0 +1,335 @@
+@import "../../variables";
+
+.employees-container {
+  background-color: $c-bg-profile;
+  padding: 20px 30px 0;
+  width: 100%;
+
+  .data-box {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 20px 30px;
+  }
+
+  .dashboard-header {
+    display: flex;
+    padding-bottom: 20px;
+
+    .dashboard-header-info-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    .dashboard-header-avatar {
+      border-width: 0;
+      height: 70px;
+      width: 70px;
+    }
+
+    .dashboard-header-info {
+      align-self: center;
+      box-sizing: border-box;
+      padding: 2px 2px 2px 20px;
+      width: 100%;
+    }
+
+    .dashboard-header-text-info-name {
+      border-width: 0;
+      font-size: 23px;
+      font-style: normal;
+      font-weight: 400;
+      height: 50px;
+      text-align: left;
+    }
+
+    .dashboard-header-text-info-time {
+      border-width: 0;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      height: 30px;
+      text-align: left;
+    }
+  }
+
+  .data-container {
+    display: flex;
+    flex-flow: row wrap;
+    height: 400px;
+    margin: 0 15px 30px 0;
+    padding-top: 15px;
+
+    .data-container-timesheet {
+      align-items: center;
+      background-color: $c-white;
+      border-color: $c-shadow-background;
+      border-radius: 0;
+      border-style: solid;
+      border-width: 1px;
+      box-shadow: none;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      margin: 0 15px 0 0;
+      width: 500px;
+    }
+
+    .data-container-activity {
+      align-items: center;
+      background-color: $c-white;
+      border-color: $c-shadow-background;
+      border-radius: 0;
+      border-style: solid;
+      border-width: 1px;
+      box-shadow: none;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      margin: 0 15px 0 0;
+      width: 200px;
+    }
+
+    .data-container-stats {
+      background-color: $c-white;
+      border-color: $c-shadow-background;
+      border-radius: 0;
+      border-style: solid;
+      border-width: 1px;
+      box-shadow: none;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      margin: 0 15px 0 0;
+      width: 285px;
+    }
+
+    .block-info {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: row;
+      height: 10%;
+      padding-top: 15px;
+      width: 100%;
+    }
+  }
+
+  .title-text {
+    box-sizing: border-box;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 2px 2px 2px 20px;
+    text-align: left;
+  }
+
+  .date-text {
+    color: $c-light-grey;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 8px 2px 2px 20px;
+    text-align: left;
+  }
+
+  .button-block {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding: 8px 25px 0 80px;
+
+    .button-block-button {
+      background: $c-white;
+      border: 0;
+      color: $c-blue;
+      cursor: pointer;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      margin: 0 0 0 5px;
+      text-decoration: auto;
+    }
+
+    .button-block-button:hover {
+      color: $c-light-green;
+      text-decoration: underline;
+    }
+  }
+
+  .punch-status {
+    align-items: center;
+    background: inherit;
+    background-color: $c-white;
+    border-color: $c-shadow-background;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: none;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    font-style: normal;
+    height: 56px;
+    text-align: left;
+    width: 460px;
+
+    .punch-status-text {
+      color: $c-black;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      padding: 8px 2px 2px 20px;
+      text-align: left;
+    }
+  }
+
+  .work-time {
+    align-items: center;
+    background: inherit;
+    background-color: $c-white;
+    border-color: $c-shadow-background;
+    border-radius: 90px;
+    border-style: solid;
+    border-width: 3px;
+    box-shadow: none;
+    box-sizing: border-box;
+    display: flex;
+    font-style: normal;
+    height: 136px;
+    justify-content: center;
+    margin: 20px;
+    width: 136px;
+  }
+
+  .punch-button-box-punch-in {
+    align-items: center;
+    background: linear-gradient(109.6538deg, $c-light-orange 0%, $c-search-orange 100%);
+    border-color: $c-light-orange-hover;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: $c-white;
+    display: flex;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    height: 50px;
+    justify-content: center;
+    margin: 20px;
+    text-align: center;
+    width: 140px;
+  }
+
+  .punch-button-box-punch-out {
+    align-items: center;
+    background: linear-gradient(109.3978deg, $c-light-green 0%, $c-dark-green 100%);
+    border-color: $c-search-orange;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: $c-white;
+    display: flex;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    height: 50px;
+    justify-content: center;
+    margin: 20px;
+    text-align: center;
+    width: 140px;
+  }
+
+  .activity-data {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .activity-module {
+    align-items: center;
+    display: flex;
+  }
+
+  .activity-indicator {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    .activity-indicator-line {
+      height: 30px;
+    }
+  }
+
+  .activity-text {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 20px;
+  }
+
+  .time-progress {
+    background: inherit;
+    border-color: $c-shadow-background;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: none;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    height: 45px;
+    justify-content: flex-end;
+    margin: 15px 15px 0;
+    padding: 5px;
+    text-align: left;
+    width: 250px;
+  }
+
+  .stats-text {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    justify-content: space-between;
+  }
+
+  .view-all-button {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    padding: 20px;
+
+    .all-log-button {
+      background: $c-white;
+      border: 0;
+      color: $c-blue;
+      cursor: pointer;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      margin: 0 0 0 5px;
+      text-decoration: auto;
+    }
+
+    .all-log-button:hover {
+      color: $c-light-green;
+      text-decoration: underline;
+    }
+  }
+
+  @media screen and (max-width: 970px) {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0;
+  }
+}

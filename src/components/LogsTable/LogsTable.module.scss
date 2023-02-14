@@ -1,0 +1,11 @@
+@import "../../variables";
+
+.table-container {
+  max-width: 100%;
+
+  h3 {
+    font-size: 23px;
+    font-weight: $f-w-bold;
+    margin-bottom: 20px;
+  }
+}

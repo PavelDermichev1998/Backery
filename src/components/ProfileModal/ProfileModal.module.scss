@@ -1,0 +1,30 @@
+@import "../../variables";
+
+.profile-modal {
+  background-color: $c-white;
+  border-radius: 5px;
+  box-shadow: $c-shadow 3px 3px 5px 5px;
+  color: $c-shadow-text;
+  font-weight: $f-w-bold;
+  font-size: 12px;
+  position: absolute;
+  right: 0;
+  top: 50px;
+  width: 150px;
+
+  .settings-container {
+    background-color: $c-shadow-background;
+    border-radius: 5px 5px 0 0;
+    cursor: default;
+    padding: 10px 0 10px 20px;
+    text-align: left;
+  }
+
+  .logout {
+    border-top: 1px solid $c-shadow;
+  }
+
+  img {
+    width: 100%;
+  }
+}

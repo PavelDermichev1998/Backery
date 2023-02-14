@@ -1,0 +1,39 @@
+@import "../../variables";
+
+.nav {
+  border: 1px solid $c-grey-border;
+  border-top: 0;
+  font-family: Arial, sans-serif;
+  height: 91.5vh;
+  padding-top: 5px;
+  width: 17%;
+
+  a {
+    text-decoration: none;
+  }
+
+  .nav-wrapper {
+    h3 {
+      color: $c-light-grey;
+      font-size: 14px;
+      font-weight: $f-w-normal;
+      padding: 10px 0 10px 20px;
+    }
+
+    .navigate-items-wrapper {
+      @media screen and (max-width: 970px) {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: 970px) {
+    height: 100%;
+    width: 100%;
+  }
+}

@@ -1,0 +1,21 @@
+@import "../../variables";
+
+.button {
+  align-items: center;
+  background: linear-gradient(to right, $c-light-orange, $c-orange);
+  border: none;
+  border-radius: 5px;
+  color: $c-white;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  font-weight: $f-w-bold;
+  height: 50px;
+  justify-content: space-around;
+  max-width: 433px;
+  width: 100%;
+
+  &:hover {
+    background: linear-gradient(to right, $c-light-orange-hover, $c-orange);
+  }
+}

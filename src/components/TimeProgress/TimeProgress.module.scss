@@ -1,0 +1,37 @@
+@import "../../variables";
+
+.time-progress {
+  background: inherit;
+  border-color: $c-shadow-background;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: none;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  height: 45px;
+  justify-content: flex-end;
+  margin: 15px 15px 0;
+  padding: 5px;
+  text-align: left;
+  width: 250px;
+}
+
+.stats-text {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  justify-content: space-between;
+}
+
+.date-text {
+  color: $c-light-grey;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 8px 2px 2px 20px;
+  text-align: left;
+}

@@ -1,0 +1,127 @@
+@import "../../variables";
+
+.admin-dashboard-container {
+  background-color: $c-bg-profile;
+  padding: 20px 30px 0;
+  width: 100%;
+
+  .data-box {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 20px 30px;
+  }
+
+  .dashboard-header {
+    display: flex;
+    padding-bottom: 20px;
+
+    .info-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    .avatar-box {
+      border-width: 0;
+      height: 70px;
+      width: 70px;
+    }
+
+    .header-info-box {
+      align-self: center;
+      box-sizing: border-box;
+      padding: 2px 2px 2px 20px;
+      width: 100%;
+    }
+
+    .text-info-name {
+      border-width: 0;
+      font-size: 23px;
+      font-style: normal;
+      font-weight: 400;
+      height: 50px;
+      text-align: left;
+    }
+
+    .text-info-time {
+      border-width: 0;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      height: 30px;
+      text-align: left;
+    }
+  }
+
+  .employees-info {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+
+    .employees-info-box {
+      align-items: center;
+      background: inherit;
+      background-color: $c-white;
+      border-color: $c-light-shadow;
+      border-radius: 2px;
+      border-style: solid;
+      border-width: 1px;
+      box-shadow: none;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      height: 100px;
+      justify-content: space-between;
+      margin: 0 15px 30px 0;
+      width: 500px;
+    }
+
+    .employees-info-image {
+      border-width: 0;
+      height: 50px;
+      padding: 0 15px 0 30px;
+      width: 50px;
+    }
+
+    .employees-info-text {
+      box-sizing: border-box;
+      font-style: normal;
+      font-weight: 400;
+      padding: 0 2px 0 80px;
+      text-align: left;
+
+      .employees-info-candidates {
+        font-size: 25px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+
+    .employees-info-button-container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .employees-info-button {
+      background: $c-white;
+      border: 0;
+      color: $c-light-blue;
+      cursor: pointer;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+      padding: 0 25px 0 0;
+      text-decoration: auto;
+    }
+  }
+
+  @media screen and (max-width: 970px) {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0;
+  }
+}

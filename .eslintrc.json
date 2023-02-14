@@ -1,0 +1,38 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [ "airbnb-typescript", "airbnb-typescript-prettier", "prettier"],
+  "overrides": [
+    {
+      "extends": ["airbnb", "airbnb-typescript"],
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "react/require-default-props": "off",
+        "react-hooks/exhaustive-deps" : "off",
+        "react/jsx-props-no-spreading": "off",
+        "react/no-unused-prop-types" : "off",
+        "react/function-component-definition": "off",
+        "object-curly-newline": "off",
+        "linebreak-style": "off",
+        "operator-linebreak": "off",
+        "no-param-reassign": "off",
+        "react/jsx-no-useless-fragment": "off",
+        "react/jsx-one-expression-per-line": "off",
+        "implicit-arrow-linebreak": "off",
+        "react/jsx-curly-newline": "off",
+        "@typescript-eslint/indent": "off",
+        "import/no-cycle": "off",
+        "consistent-return": "off",
+        "import/export": "off",
+        "import/prefer-default-export": "off"
+      }
+    }
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "sourceType": "module"
+  },
+  "plugins": ["react"]
+}

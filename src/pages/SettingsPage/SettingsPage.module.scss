@@ -1,0 +1,59 @@
+@import "../../variables";
+
+.settings-page {
+  background-color: $c-bg-profile;
+  padding: 30px;
+  width: 100%;
+
+  .settings-container {
+    background-color: $c-white;
+    border: 1px solid $c-grey-border;
+    padding: 10px;
+
+    .settings-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      p {
+        color: $c-shadow-text;
+        font-size: 13px;
+        font-weight: $f-w-normal;
+        margin: 0 0 10px 10px;
+      }
+
+      input {
+        border: 1px solid $c-white-grey;
+        border-radius: 5px;
+        height: 35px;
+        padding: 0 10px;
+      }
+    }
+
+    .settings-button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+
+      button {
+        background-color: $c-dark-green;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        color: $c-white;
+        height: 40px;
+        width: 140px;
+
+        &:hover {
+          background-color: $c-light-green;
+        }
+      }
+    }
+  }
+
+  h3 {
+    font-size: 23px;
+    font-weight: $f-w-normal;
+    margin-bottom: 20px;
+  }
+}

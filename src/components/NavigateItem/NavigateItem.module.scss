@@ -1,0 +1,28 @@
+@import "../../variables";
+
+.navigate-item {
+  align-items: center;
+  display: flex;
+  gap: 15px;
+  padding: 10px 15px;
+
+  &:hover {
+    background: $c-bg-second;
+    cursor: pointer;
+  }
+
+  img {
+    height: 15px;
+    width: 16px;
+  }
+
+  p {
+    color: $c-grey-text;
+    font-size: 14px;
+    font-weight: $f-w-normal;
+  }
+
+  @media screen and (max-width: 970px) {
+    flex-wrap: wrap;
+  }
+}

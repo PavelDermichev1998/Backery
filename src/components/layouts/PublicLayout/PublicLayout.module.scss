@@ -1,0 +1,43 @@
+@import "../../../variables";
+
+.public-layout {
+  align-items: center;
+  background-color: $c-bg-main;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+
+  .layout-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    .layout-wrapper {
+      background-color: $c-white;
+      border: 1px solid $c-grey-border;
+      border-radius: 5px;
+      max-width: 500px;
+      margin-bottom: 10px;
+      min-height: 400px;
+      padding: 30px;
+      width: 100vw;
+
+      .layout-text {
+        font-weight: $f-w-bold;
+        font-size: 23px;
+        padding-bottom: 25px;
+        text-align: center;
+      }
+
+      p {
+        font-size: 14px;
+        margin-bottom: 3px;
+      }
+    }
+  }
+
+  img {
+    width: 300px;
+  }
+}

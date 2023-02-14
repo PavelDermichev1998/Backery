@@ -1,0 +1,107 @@
+@import "../../variables";
+
+.employees-container {
+  background-color: $c-bg-profile;
+  padding: 20px 30px 0;
+  width: 100%;
+
+  @media screen and (max-width: 970px) {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0;
+  }
+
+  .employees-navigate {
+    display: flex;
+    font-size: 14px;
+    margin-bottom: 20px;
+
+    a {
+      color: $c-blue;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .search-container-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    .search-container {
+      align-items: center;
+      display: flex;
+      margin-bottom: 20px;
+
+      .search-button {
+        align-items: center;
+        border: 1px solid $c-white-grey;
+        border-radius: 0 5px 5px 0;
+        color: $c-search-orange;
+        cursor: pointer;
+        display: flex;
+        font-size: 14px;
+        font-weight: $f-w-bold;
+        height: 40px;
+        justify-content: center;
+        padding: 0 20px;
+
+        &:hover {
+          background-color: $c-search-orange;
+          color: $c-white;
+        }
+      }
+
+      input {
+        border: 1px solid $c-white-grey;
+        border-radius: 5px 0 0 5px;
+        border-right: 0;
+        height: 40px;
+        outline: none;
+        padding-left: 10px;
+        width: 50vw;
+
+        @media screen and (max-width: 440px) {
+          width: 190px;
+        }
+
+        &::placeholder {
+          font-size: 12px;
+          font-weight: $f-w-normal;
+        }
+      }
+    }
+
+    .add-button {
+      background: inherit;
+      background-color: $c-dark-green;
+      border: none;
+      border-radius: 5px;
+      box-shadow: none;
+      color: $c-white;
+      height: 40px;
+      margin: 5px;
+      width: 140px;
+
+      &:hover {
+        background-color: $c-light-green;
+        color: $c-white;
+      }
+    }
+  }
+
+  .table-container {
+    max-width: 100%;
+
+    h3 {
+      font-size: 23px;
+      font-weight: $f-w-bold;
+      margin-bottom: 20px;
+    }
+  }
+}

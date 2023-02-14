@@ -1,0 +1,27 @@
+@import "../../variables";
+
+.login-email-password {
+  input {
+    background: transparent;
+    border: 1px solid $c-grey-border;
+    border-radius: 3px;
+    font-size: 13px;
+    height: 40px;
+    margin-bottom: 10px;
+    max-width: 433px;
+    outline: none;
+    padding: 3px 2px;
+    width: 100%;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      appearance: none;
+    }
+  }
+}
+
+.invalid-input {
+  color: $c-red;
+  font-size: 12px;
+  margin-bottom: 15px;
+}

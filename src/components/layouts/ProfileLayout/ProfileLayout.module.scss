@@ -1,0 +1,11 @@
+@import "../../../variables";
+
+.profile-layout {
+  .profile-layout-content {
+    display: flex;
+
+    @media screen and (max-width: 970px) {
+      flex-wrap: wrap;
+    }
+  }
+}

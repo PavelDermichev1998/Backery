@@ -1,0 +1,125 @@
+@import "../../variables";
+
+.modal-box {
+  align-content: center;
+  background-color: #fff;
+  border: 1px solid #bbb3b3;
+  border-radius: 6px;
+  display: flex;
+  flex-flow: column wrap;
+  left: 50%;
+  padding: 15px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+
+  .modal-box-form {
+    display: contents;
+  }
+}
+
+.modal-button-wrapper {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .checkbox-wrapper {
+    align-items: center;
+    color: $c-grey;
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+
+    input {
+      cursor: pointer;
+      width: 15px;
+    }
+
+    button {
+      background-color: inherit;
+      border: none;
+      color: $c-grey;
+      cursor: pointer;
+      font-size: 13px;
+      outline: none;
+    }
+
+    a {
+      color: $c-orange-text;
+      margin-left: 50%;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .modal-button-close {
+    align-items: center;
+    background-color: $c-orange;
+    border: 1px solid #bbb3b3;
+    color: $c-white;
+    display: flex;
+    justify-content: space-between;
+    outline: none;
+    padding: 5px 10px;
+    width: 100%;
+
+    &:hover {
+      background-color: $c-light-orange-hover;
+    }
+  }
+}
+
+.modal-select-container {
+  .dropdown {
+    display: inline-block;
+    margin: 15px 0;
+    position: relative;
+
+    .dropbtn {
+      background-color: $c-orange-text;
+      border: none;
+      border-radius: 3px;
+      color: $c-white;
+      cursor: pointer;
+      font-size: 14px;
+      padding: 10px;
+    }
+
+    .dropdown-content {
+      bottom: 35px;
+      box-shadow: 0 8px 16px 0 $c-shadow;
+      display: none;
+      min-width: 160px;
+      position: absolute;
+      z-index: 1;
+
+      button {
+        align-items: center;
+        background-color: $c-white;
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        outline: none;
+        padding: 5px 10px;
+        width: 100%;
+
+        &:hover {
+          background-color: $c-light-shadow;
+        }
+      }
+    }
+
+    &:hover .dropdown-content {
+      display: block;
+    }
+
+    &:hover .dropbtn {
+      background-color: $c-orange;
+    }
+  }
+}

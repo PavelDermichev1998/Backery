@@ -1,0 +1,5 @@
+node_modules
+.env
+src/components/ShowPassword/tests
+src/components/layouts/PublicLayout/tests
+src/components/layouts/ProfileLayout/tests
